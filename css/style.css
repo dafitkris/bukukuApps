@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 180px 20px 180px;
+    padding: 0;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+header {
+
+    background-image: url(../assets/head-bg.jpg);
+    background-position: bottom;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+
+    padding: 10px;
+    border-radius: 20px;
+    color: #EAE7DC;
+
+    text-align: center;
+    letter-spacing: 4px;
+    text-shadow: 1px 1px 3px #000000;
+    font-weight: bold;
+    width: auto;
+}
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrapper .container {
+    width: 800px;
+    box-shadow: 2px 2px 5px #888888;
+    border-radius: 100px;
+    margin: 16px;
+    background-image: url(../assets/head-bg.jpg);
+    padding: 70px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+.wrapper .containerBuku {
+    width: 800px;
+    box-shadow: 2px 2px 5px #888888;
+    border-radius: 100px;
+    margin: 16px;
+    background-image: url(../assets/head-bg.jpg);
+    padding: 70px;
+    flex-grow: 1;
+    height: fit-content;
+}
+
+
+.item {
+    border-radius: 50px;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background-image: url(../assets/head-bg.jpg);
+    background-size: 195%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    color: #070706;
+    text-shadow: rgb(238, 248, 238);
+    display: flex;
+    align-items: center;
+}
+
+.item>.inner h2 {
+    margin-bottom: 21px;
+    margin-left: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.item>.inner p {
+    margin-top: -10px;
+    margin-left: 20px;
+    text-shadow: 1px 1px 1px black;
+}
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 450px;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+
+
+
+input[type=text],
+[type=number] {
+    font-family: 'Open Sans', sans-serif;
+    background: white;
+    border: 2px solid #8E8D8A;
+    border-radius: 70px;
+    padding: 16px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    font-size: 24px;
+}
+
+.btn-submit {
+    width: 80%;
+    font-family: 'Open Sans', sans-serif;
+    border-radius: 70px;
+    padding: 12px 24px;
+    border: 2px solid #8E8D8A;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: auto;
+    align-self: center;
+    cursor: pointer;
+    background: #f0bae8;
+}
+
+.btn-submit:hover {
+    background: rgb(49, 243, 49);
+    color: white;
+}
+
+input[type=text],
+.btn-submit:focus {
+    outline: none;
+}
+
+.text-center {
+    text-align: center;
+    margin-left: 12px;
+    color: rgb(0, 0, 0);
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.check-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/check-1.png');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-2.png');
+    background-size: contain;
+}
+
+.undo-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/back-arrow-1.png');
+    background-size: contain;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/back-arrow-2.png');
+    background-size: contain;
+}
+
+.trash-button {
+    width: 40px;
+    height: 40px;
+
+    background: url('../assets/delete-1.png');
+    background-size: contain;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/delete-2.png');
+    background-size: contain;
+}
+
+.check-button:focus,
+.trash-button {
+    outline: none;
+}
